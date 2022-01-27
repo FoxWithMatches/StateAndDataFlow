@@ -20,9 +20,20 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .padding(.top, 100)
             Spacer()
-            ButtonView(timer: timer)
+            Buttons(title: timer.buttonTitle,
+                    color: .red,
+                    action: timer.startTimer)
             Spacer()
+            Buttons(title: "Log Out",
+                    color: .blue,
+                    action: logOut)
         }
+    }
+    
+    private func logOut() {
+        userManager.user.isRegister.toggle()
+        userManager.user.name = ""
+        
     }
 }
 
@@ -33,22 +44,3 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct ButtonView: View {
-    @ObservedObject var timer: TimeCounter
-    
-    var body: some View {
-        Button(action: timer.startTimer) {
-            Text(timer.buttonTitle)
-                .font(.title)
-                .fontWeight(.bold)
-                .foregroundColor(.white)
-        }
-        .frame(width: 200, height: 60)
-        .background(Color.red)
-        .cornerRadius(20)
-        .overlay(
-            RoundedRectangle(cornerRadius: 20)
-                .stroke(Color.black, lineWidth: 4)
-        )
-    }
-}

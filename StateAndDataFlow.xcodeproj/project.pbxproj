@@ -15,6 +15,7 @@
 		A8571B2327A1C9940042B3B8 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8571B2227A1C9940042B3B8 /* RegisterView.swift */; };
 		A8571B2527A1CA9E0042B3B8 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8571B2427A1CA9E0042B3B8 /* UserManager.swift */; };
 		A8571B2727A1CD470042B3B8 /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8571B2627A1CD470042B3B8 /* StarterView.swift */; };
+		EAA55D8127A2C0C400E1EF3A /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA55D8027A2C0C400E1EF3A /* Buttons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		A8571B2227A1C9940042B3B8 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		A8571B2427A1CA9E0042B3B8 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		A8571B2627A1CD470042B3B8 /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
+		EAA55D8027A2C0C400E1EF3A /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				A8571B1227A1BDB40042B3B8 /* StateAndDataFlowApp.swift */,
 				A8571B2627A1CD470042B3B8 /* StarterView.swift */,
 				A8571B1427A1BDB40042B3B8 /* ContentView.swift */,
+				EAA55D8027A2C0C400E1EF3A /* Buttons.swift */,
 				A8571B2227A1C9940042B3B8 /* RegisterView.swift */,
 				A8571B2027A1C28D0042B3B8 /* TimeCounter.swift */,
 				A8571B2427A1CA9E0042B3B8 /* UserManager.swift */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAA55D8127A2C0C400E1EF3A /* Buttons.swift in Sources */,
 				A8571B2127A1C28D0042B3B8 /* TimeCounter.swift in Sources */,
 				A8571B2327A1C9940042B3B8 /* RegisterView.swift in Sources */,
 				A8571B2727A1CD470042B3B8 /* StarterView.swift in Sources */,

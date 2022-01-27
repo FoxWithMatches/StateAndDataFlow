@@ -35,7 +35,7 @@ struct RegisterView: View {
     private func registerUser() {
         if !userManager.user.name.isEmpty {
             
-            userManager.isRegister.toggle()
+            userManager.user.isRegister.toggle()
         }
     }
 }

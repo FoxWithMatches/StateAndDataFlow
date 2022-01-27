@@ -9,7 +9,7 @@ import Combine
 import Foundation
 
 class UserManager: ObservableObject {
-    @Published var isRegister = false
+
     @Published var user = User()
     var isValid: Bool {
         user.name.count >= 3
@@ -25,4 +25,5 @@ class UserManager: ObservableObject {
 }
 struct User {
     var name = ""
+    var isRegister = false
 }
