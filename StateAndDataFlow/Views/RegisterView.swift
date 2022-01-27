@@ -34,7 +34,6 @@ struct RegisterView: View {
     
     private func registerUser() {
         if !userManager.user.name.isEmpty {
-            
             userManager.user.isRegister.toggle()
         }
     }
@@ -43,6 +42,5 @@ struct RegisterView: View {
 struct RegisterView_Previews: PreviewProvider {
     static var previews: some View {
         RegisterView()
-        
     }
 }

@@ -14,15 +14,14 @@ class UserManager: ObservableObject {
     var isValid: Bool {
         user.name.count >= 3
     }
-    
-    private var cancellableSet: Set<AnyCancellable> = []
-    
+
     init() {}
     init(user: User) {
         self.user = user
     }
     
 }
+
 struct User {
     var name = ""
     var isRegister = false
