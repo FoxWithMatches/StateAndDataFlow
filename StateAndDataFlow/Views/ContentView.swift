@@ -25,15 +25,10 @@ struct ContentView: View {
                     action: timer.startTimer)
             Spacer()
             Buttons(title: "Log Out",
-                    color: .blue,
-                    action: logOut)
+                    color: .blue) {
+                    DataManager.shared.logOutUser(userManager: userManager)
+            }
         }
-    }
-    
-    private func logOut() {
-        userManager.user.isRegister.toggle()
-        userManager.user.name = ""
-        
     }
 }
 

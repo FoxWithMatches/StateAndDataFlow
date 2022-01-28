@@ -26,7 +26,7 @@ struct Buttons: View {
             RoundedRectangle(cornerRadius: 20)
                 .stroke(Color.black, lineWidth: 4)
         )
-        }
+    }
 }
 
 struct Buttons_Previews: PreviewProvider {
